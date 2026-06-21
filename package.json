@@ -4,12 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && vue-tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.38"
+    "@supabase/supabase-js": "^2.108.2",
+    "chart.js": "^4.5.1",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.38",
+    "vue-chartjs": "^5.3.3",
+    "vue-router": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^24.13.2",
